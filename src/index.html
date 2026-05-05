@@ -6,7 +6,123 @@
     <title>Assignment 3 - Landing Page</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- Mulai coding di sini -->
+  <body
+    class="bg-black box-border m-0 p-0"
+    style="font-family: 'Quicksand', sans-serif"
+  >
+    <!--===== HEADER =====-->
+    <header class="text-white">
+      <nav
+        class="fixed top-0 z-40 flex w-full h-16 md:h-20 items-center px-4 md:px-10 lg:px-35 bg-black border-b border-white/10"
+      >
+        <!-- LOGO -->
+        <div class="flex items-center gap-2">
+          <img src="/assets/icons/logo-symbol.svg" class="w-6" alt="Logo" />
+          <a href="#" class="text-xl font-semibold no-underline text-white">
+            Your Logo
+          </a>
+        </div>
+
+        <!-- MOBILE TOGGLE -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- OVERLAY -->
+        <label
+          for="menu-toggle"
+          class="hidden peer-checked:block fixed inset-0 md:hidden"
+        ></label>
+
+        <!-- HAMBURGER -->
+        <label
+          for="menu-toggle"
+          class="ml-auto flex md:hidden cursor-pointer peer-checked:hidden"
+        >
+          <img src="/assets/icons/menu-01.svg" class="w-6 h-6" alt="Menu" />
+        </label>
+
+        <!-- CENTER MENU (DESKTOP) -->
+        <ul class="hidden md:flex flex-1 justify-center gap-8">
+          <li>
+            <a href="#about" class="hover:text-orange-400 font-semibold"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#service" class="hover:text-orange-400 font-semibold"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#project" class="hover:text-orange-400 font-semibold"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#testimonial" class="hover:text-orange-400 font-semibold"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="hover:text-orange-400 font-semibold">FAQ</a>
+          </li>
+        </ul>
+
+        <!-- DESKTOP -->
+        <a
+          href="#contact-us"
+          class="hidden md:flex ml-6 items-center justify-center h-11 px-6 md:w-50 bg-[#ff623e] rounded-full font-bold"
+        >
+          Let's Talk
+        </a>
+
+        <!-- MOBILE MENU -->
+        <div
+          class="hidden peer-checked:flex flex-col gap-4 absolute top-full left-0 w-full bg-black px-6 py-6 md:hidden"
+        >
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a href="#about" class="hover:text-orange-400 font-semibold"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#service" class="hover:text-orange-400 font-semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#our-work" class="hover:text-orange-400 font-semibold"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 font-semibold"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#team" class="hover:text-orange-400 font-semibold"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#contact-us"
+            class="flex justify-center items-center h-11 bg-[#ff623e] rounded-full font-bold"
+          >
+            Let's Talk
+          </a>
+        </div>
+
+        <!-- CLOSE ICON -->
+        <label
+          for="menu-toggle"
+          class="hidden peer-checked:flex md:hidden fixed right-4 top-4 z-50"
+        >
+          <img src="/assets/icons/x-close.svg" class="w-6 h-6" alt="Close" />
+        </label>
+      </nav>
+    </header>
   </body>
 </html>
